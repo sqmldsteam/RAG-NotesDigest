@@ -11,7 +11,7 @@ import os
 full_rawdata = "Consultation for Ms. Doe on 2024-01-15. Reason: Altered mental status. Findings: Cardiac exam was WNL. Assessment: Likely metabolic encephalopathy. Recommendations: Check ammonia level and start lactulose."
 
 # Cell 3: Chunking function and Execution
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
