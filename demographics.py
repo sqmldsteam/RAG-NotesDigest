@@ -8,7 +8,7 @@ from tqdm.auto import tqdm
 
 
 # Cell 3: Chunking function
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
