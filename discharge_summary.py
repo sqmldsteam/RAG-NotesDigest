@@ -11,7 +11,7 @@ import os
 full_rawdata = "Patient Jane Smith, MRN 654321, discharged on 2023-10-25. Admission Diagnosis: Pneumonia. Discharge Diagnosis: Resolved Pneumonia. Hospital Course: Started on Azithromycin. Follow-up with PCP in 7 days."
 
 # Cell 3: Chunking function and Execution
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
