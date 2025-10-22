@@ -7,16 +7,10 @@ import json
 from tqdm.auto import tqdm
 import os
 
-# --- YOU MUST DEFINE full_rawdata HERE ---
-# Example placeholder (Replace this with your actual large text data)
-# full_rawdata = "Patient John Doe, MRN 123456... Chief Complaint: Fever for 3 days. Past Medical History: HTN, DM..."
-# IMPORTANT: You must define full_rawdata before running this script.
-# For demonstration purposes, I'll use a short placeholder to make the script runnable, 
-# but in a real scenario, this should be your full document.
-full_rawdata = "Patient John Doe, MRN 123456, was admitted on 2023-10-20. Chief Complaint: Severe headache. ROS: Positive for nausea. Physical Exam: Normocephalic. Labs: WBC 12.5. Assessment: Migraine. Plan: IV fluids and discharge."
+
 
 # Cell 3: Chunking function and Execution
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
