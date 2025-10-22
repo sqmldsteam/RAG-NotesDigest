@@ -7,11 +7,9 @@ import json
 from tqdm.auto import tqdm
 import os
 
-# --- YOU MUST DEFINE full_rawdata HERE ---
-full_rawdata = "Progress Note for Mr. Lee, 2024-02-01. Subjective: Patient states less pain. Vitals: Temp 37.2. New Labs: Creatinine 1.2 (stable). Plan: Continue current antibiotics. Disposition: Expected discharge tomorrow."
 
 # Cell 3: Chunking function and Execution
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
