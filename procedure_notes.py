@@ -7,11 +7,8 @@ import json
 from tqdm.auto import tqdm
 import os
 
-# --- YOU MUST DEFINE full_rawdata HERE ---
-full_rawdata = "Procedure Note for P. Rodriguez. Procedure Date: 2024-03-10. Type: Lumbar Puncture. Indication: Rule out meningitis. Technique: Sterile prep, 20G needle, clear fluid obtained. Complications: None. Post-Procedure Plan: Supine for 1 hour."
-
 # Cell 3: Chunking function and Execution
-def chunk_text(text, chunk_size=200):
+def chunk_text(text, chunk_size=800):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
