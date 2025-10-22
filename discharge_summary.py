@@ -7,8 +7,6 @@ import json
 from tqdm.auto import tqdm
 import os
 
-# --- YOU MUST DEFINE full_rawdata HERE ---
-full_rawdata = "Patient Jane Smith, MRN 654321, discharged on 2023-10-25. Admission Diagnosis: Pneumonia. Discharge Diagnosis: Resolved Pneumonia. Hospital Course: Started on Azithromycin. Follow-up with PCP in 7 days."
 
 # Cell 3: Chunking function and Execution
 def chunk_text(text, chunk_size=800):
