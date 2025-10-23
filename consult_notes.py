@@ -7,6 +7,7 @@ import json
 from tqdm.auto import tqdm
 import os
 
+# Add the raw text here
 full_rawdata = "Consultation for Ms. Doe on 2024-01-15. Reason: Altered mental status. Findings: Cardiac exam was WNL. Assessment: Likely metabolic encephalopathy. Recommendations: Check ammonia level and start lactulose."
 
 # Cell 3: Chunking function and Execution
